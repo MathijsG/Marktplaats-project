@@ -91,12 +91,12 @@
   // Implement Geocoding Service
   let geocodeService = L.esri.Geocoding.geocodeService();
 
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
+  L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png?access_token={accessToken}',
     {
       center: defaultCenter,
       maxZoom: 18,
       id: 'mapbox.streets',
-      accessToken: 'pk.eyJ1IjoibXNnYmlnaG91c2UiLCJhIjoiY2sxaHdrY214MDZkbDNoanpwNW9rcjRsOSJ9.YXMtqR_k0YWeKNnAZHmhdg'
+      accessToken: 'pk.eyJ1IjoibXNnYmlnaG91c2UiLCJhIjoiY2tmd3YyZ2I5MWttczJ6c3ZwaXlhc3N6biJ9.aQabPPWdknoOl3yu_u9-ag'
     })
     .addTo(locationMap);
 

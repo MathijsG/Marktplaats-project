@@ -163,7 +163,7 @@
   let defaultZoomLevel = 19; // Max zoom because now it's already a specific location
   let locationMap = L.map("locationMap").setView(defaultCenter, defaultZoomLevel);
 
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
+  L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png?access_token={accessToken}',
     {
       maxZoom: 18,
       id: 'mapbox.streets',
